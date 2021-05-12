@@ -1,0 +1,17 @@
+1. phân tích
+    Những thành phần thường gặp :
+
+    Header( đầu trang) V
+
+    navigation ( điều hướng) V
+
+    breadcrumb( chỉ ra mình đang ở đâu) - tùy từng website
+
+    sidebar
+
+    slider ( trượt nội dung: ảnh, video,vv)
+
+    Content
+
+    footer
+2. xây dựng móng
