@@ -108,80 +108,84 @@ html {
 
 
 #header {
+    z-index:1;
+    height: 46.4px;
+    background-color: #000;
+    
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 46.4px;
-    background-color: #000;
+    
     color: aliceblue;
     
 }
 
 
-
-#nav li {
-    display: inline-block;
-    position: relative;
-   
-}
-
-#nav li:hover {
-    background-color: #ccc !important;
-}
-
-
-/*
-#nav li:hover a {
-    display: inline-block
-}  
-*/
- /* chỉ con thẻ a cấp 1 mới bị ảnh hưởng */
-#nav > li > a {
-    color: white;
-    text-transform: uppercase;
-}
-
-#nav li a {
-    font-size: 20px;
-    display: block;
-    padding: 0px 24px;
-    text-decoration-line: none ;
-    line-height: 46.4px;
-    
-}
-
-
-#nav li:hover a {
-    color: #000 !important;
-    
-}
-
-#nav .list {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color:white;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-    
-}
-
-
-#nav > li:hover > .list{
-    display: block;
+#nav, .list {
+    list-style-type: none;
 }
 
 #nav {
     display: inline-block;
 }
 
-#nav, .list {
-    list-style-type: none;
+#nav > li {
+    display: inline-block;
+    
 }
 
-#nav .list li {
-    width: 100%;
+#nav li {
+    position: relative;
+    
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+#nav li:hover {
+    background-color: #ccc !important;
+}
+
+
+#nav li a {
+    display: inline-block;
+    line-height: 46.4px;
+    text-decoration: none ;
+    font-size: 20px;
+    /* display: block; */
+    padding: 0px 24px;
+    
+}
+
+#nav  li:hover  .list{
+    display: block;
+}
+
+/* #nav li:hover a {
+    color: #000 !important;
+    
+} */
+
+#nav > li:hover > a,
+#nav .list li:hover a {
+color: #000;
+background-color: #ccc;
+}
+
+
+#nav .list {
+    display: none;
+    position: absolute;
+    background-color:white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    top: 46px;
+    left: 0;
+    
 }
 
 #nav .list a {
@@ -190,6 +194,14 @@ html {
     line-height: 38px;
     
 }
+
+
+
+
+#nav .list li {
+    width: 100%;
+}
+
 
 #nav .nav-arrow-down {
     font-size: 14px;
@@ -229,11 +241,11 @@ html {
 
 #slider {
     position: relative;
-    background-color: #333; 
-    min-height: 100px;
     margin-top: 46.4px;
     padding-top: 50%;
-    background: url(/assets/img/chicago.jpg) no-repeat top center / cover;
+    background-color: #333; 
+    min-height: 100px;
+    background: url(/assets/img/chicago.jpg) top center / cover no-repeat;
     
 }
 
@@ -277,6 +289,9 @@ html {
     width: 800px;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
 
 }
 
