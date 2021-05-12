@@ -15,3 +15,4 @@
 
     footer
 2. xây dựng móng
+3. responsive
