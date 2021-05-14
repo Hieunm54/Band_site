@@ -16,3 +16,9 @@
     footer
 2. xây dựng móng
 3. responsive
+
+    a. mobile responsive
+    - chinh cho menu thanh hang doc
+    - có nut để chỉnh height => chinhr đóng mở menu
+    - overflow : hiden => ẩn đi thẻ con khi nó vượt quá thẻ cha
+    - ẩn search => thay bằng menu icon (viet code javascript)

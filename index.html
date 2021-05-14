@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/syles.css">
+    <!-- responsive phai o sau  -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
@@ -45,6 +46,10 @@
             <!-- begin search bar -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="menu-icon-btn" class="menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- end search bar -->
             
@@ -229,6 +234,40 @@
 
     </div>
 
+
+    <script>
+        var menuIcon = document.getElementById('menu-icon-btn');
+        const headerHeight = header.clientHeight;
+        
+        //menu btn
+        menuIcon.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+
+            //console.log(headerHeight)
+            //console.log(isClosed)
+        
+            if(isClosed){
+                header.style.height = 'auto';
+            } else{
+                header.style.height = null;
+            }
+        }
+
+        //
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        console.log(menuItems)
+
+        for( var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            console.log(menuItem)
+            menuItem.onclick = ()=>{
+                console.log(this)
+                header.style.height = null;
+
+            }
+
+        }
+    </script>
 
 </body>
 

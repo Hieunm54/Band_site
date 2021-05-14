@@ -1,24 +1,34 @@
-@media(max-width: 739px){ 
+    /* pc  */
     @media(min-width: 1024px){
-        .pc{
-            display: block;
-
-        }
+        
         
     } 
 
+    /* tablet  */
     @media(min-width: 740px ) and (max-width: 1023px){
         
-        .tablet{
-            display: block;
-            
-        }
+       
         
     } 
     
-    .mobile{
-        display: block;
+    /* mobile  */
+    @media (max-width: 739px){
+        #nav li {
+            display: block;
+        }
         
+        #header {
+            overflow: hidden;
+        }
+
+        #header .search-btn{
+            display: none;
+        }
+        #header .menu-icon{
+            display: inline-block;
+        }
+
+
+
     }
-    
-} 
+   

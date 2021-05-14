@@ -218,10 +218,23 @@ background-color: #ccc;
     
 }
 
+#header .menu-btn,
 #header .search-btn {
     float: right;
     
 }
+
+#header .menu-icon{
+    display: none;
+    font-size: 24px;
+    line-height: 46.4px;
+    padding: 0px 21px;
+}
+
+#header .menu-btn:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+} 
 
 #header .search-btn:hover {
     background-color: #f44336!important;
