@@ -55,6 +55,18 @@
             padding: 5px 41px;
         }
 
+        #content .content_section{
+            width: 100%;
+        }
+
+        .s-col-full{
+            width:100%;
+        }
+
+        .member .member_img{
+            width: 60%
+        }
+    
 
     }
    

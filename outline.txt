@@ -30,4 +30,8 @@
 
     - chỉnh more để no ko bị thu nhỏ ()
     - chỉ để overflow trên mobile thôi ( tối thiểu tren mobile là 42px để bấm)
-    - 
+    
+    * mobile content 
+    - sua anh(chinh vi tri, kich co)
+    - chinh text 
+    
