@@ -22,3 +22,12 @@
     - có nut để chỉnh height => chinhr đóng mở menu
     - overflow : hiden => ẩn đi thẻ con khi nó vượt quá thẻ cha
     - ẩn search => thay bằng menu icon (viet code javascript)
+    
+    - cần chỉnh sao cho ấn vào cả thẻ menu => thay display = block
+    - ? sẽ bị mất nuts menu => vì nó bị thẻ menu đẩy xuống => giải quyết bawnfgf position( cho nó cao hơn thằng khác)
+    => chỉnh thêm top, right ( chỉ dùng được khi có position)
+    - ? thằng home khi ấn cungx bị redirect luôn => chỉnh display
+
+    - chỉnh more để no ko bị thu nhỏ ()
+    - chỉ để overflow trên mobile thôi ( tối thiểu tren mobile là 42px để bấm)
+    - 

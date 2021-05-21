@@ -255,18 +255,29 @@
 
         //
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
-        console.log(menuItems)
+        //console.log(menuItems)
 
         for( var i = 0; i < menuItems.length; i++){
             var menuItem = menuItems[i];
-            console.log(menuItem)
-            menuItem.onclick = ()=>{
-                console.log(this)
-                header.style.height = null;
+            
+            
+            menuItem.onclick = function(event) {
+                // kiem tra cos phan tu lien ke va kiem tra phan tu lien ke cos phai la list ko
+                // nho dung this
+                let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('list');
+                
+                if( isParentMenu){
+                    event.preventDefault();
+                } else{
+                    //console.log(this)
+                    header.style.height = null;
 
+                }
+                
             }
 
         }
+        // console.log('ra khoi vong for ',menuItem);
     </script>
 
 </body>

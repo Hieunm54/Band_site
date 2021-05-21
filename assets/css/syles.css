@@ -127,7 +127,7 @@ html {
 }
 
 #nav {
-    display: inline-block;
+    display: block;
 }
 
 #nav > li {
@@ -153,7 +153,7 @@ html {
 
 
 #nav li a {
-    display: inline-block;
+    display: block;
     line-height: 46.4px;
     text-decoration: none ;
     font-size: 20px;

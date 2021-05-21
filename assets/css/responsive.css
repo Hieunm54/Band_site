@@ -1,6 +1,8 @@
     /* pc  */
     @media(min-width: 1024px){
-        
+        #nav {
+            display: inline-block;
+        }
         
     } 
 
@@ -13,21 +15,45 @@
     
     /* mobile  */
     @media (max-width: 739px){
-        #nav li {
-            display: block;
-        }
         
         #header {
             overflow: hidden;
         }
 
+        
         #header .search-btn{
             display: none;
         }
+        
         #header .menu-icon{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #header #nav li:first-child{
             display: inline-block;
         }
 
+        #nav li {
+            display: block;
+        }
+
+        #nav li a {
+            padding: 1px 24px;
+        }
+        
+        #nav .list {
+            /* display: block; */
+            
+            position: initial;
+            background-color: #333;
+        }
+        #nav .list a {
+            color: #fff;
+            padding: 5px 41px;
+        }
 
 
     }
